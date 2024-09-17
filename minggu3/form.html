@@ -10,9 +10,6 @@
         padding: 10px 14px;
         border-radius: 1.5rem;
         }
-        input:focus {
-            outline-color: red;
-        }
 
         .input-section {
             display: flex;
@@ -24,14 +21,26 @@
         .input-section:hover {
             background-color: blueviolet;
         }
-        
+
+        input:focus {
+            outline-color: red;
+            background-color: silver;
+
+        }
+
+        input:disabled {
+            background-color: gold;
+        }
+
+    
+
     </style>
 </head>
 <body>
     <form id="registration-form" method="get" action="result.html">
         <div class="input-section">
             <label for="nama">Nama:</label>
-            <input id="nama" name="nama">
+            <input id="nama" name="nama" disabled>
         </div>
         <div class="input-section">
             <label for="umur">Umur:</label>
