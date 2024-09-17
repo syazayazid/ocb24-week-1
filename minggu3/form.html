@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+
+        input {
+        padding: 10px 14px;
+        border-radius: 1.5rem;
+        }
+        input:focus {
+            outline-color: red;
+        }
+
+        .input-section {
+            display: flex;
+            flex-direction: column;
+            /*align-items:flex-start;*/
+            width: 500px;
+
+        }
+        .input-section:hover {
+            background-color: blueviolet;
+        }
+        
+    </style>
 </head>
 <body>
-    <form method="get" action="result.html">
-        <div>
+    <form id="registration-form" method="get" action="result.html">
+        <div class="input-section">
             <label for="nama">Nama:</label>
             <input id="nama" name="nama">
         </div>
-        <div></div>
+        <div class="input-section">
             <label for="umur">Umur:</label>
             <input id="umur" type="number" min="0" name="umur">
         </div>
